@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mouse Events</title>
+</head>
+<body>
+
+<h3 id="msg">Mouse Event Example</h3>
+
+<button onclick="clickEvent()">Click Me</button>
+<button onmouseover="overEvent()">Mouse Over</button>
+<button onmouseout="outEvent()">Mouse Out</button>
+
+<script>
+function clickEvent() {
+    document.getElementById("msg").innerHTML = "Button Clicked!";
+}
+
+function overEvent() {
+    document.getElementById("msg").innerHTML = "Mouse is over the button";
+}
+
+function outEvent() {
+    document.getElementById("msg").innerHTML = "Mouse moved out";
+}
+</script>
+
+</body>
+</html>

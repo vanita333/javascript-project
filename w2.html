@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body onfocus="focusWin()" onblur="blurWin()">
+
+<p id="msg"></p>
+
+<script>
+function focusWin() {
+    document.getElementById("msg").innerHTML =
+        "Window Active";
+}
+
+function blurWin() {
+    document.getElementById("msg").innerHTML =
+        "Window Inactive";
+}
+</script>
+
+</body>
+</html>

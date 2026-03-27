@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keyboard Events Example</title>
+</head>
+<body>
+
+<h3>Keyboard Event Handling</h3>
+
+<input type="text" onkeydown="keyDown()" onkeyup="keyUp()" placeholder="Type here">
+<p id="keyMsg">Type something...</p>
+
+<script>
+function keyDown() {
+    document.getElementById("keyMsg").innerHTML = "Key Pressed";
+}
+
+function keyUp() {
+    document.getElementById("keyMsg").innerHTML = "Key Released";
+}
+</script>
+
+</body>
+</html>

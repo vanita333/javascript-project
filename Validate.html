@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Events</title>
+</head>
+<body>
+
+<form onsubmit="return validateForm()">
+    Name: <input type="text" id="name" onchange="valueChange()"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<p id="formMsg"></p>
+
+<script>
+function valueChange() {
+    document.getElementById("formMsg").innerHTML = "Value Changed";
+}
+
+function validateForm() {
+    var n = document.getElementById("name").value;
+    if (n == "") {
+        alert("Name must be filled");
+        return false;
+    }
+    alert("Form Submitted Successfully");
+    return true;
+}
+</script>
+
+</body>
+</html>
